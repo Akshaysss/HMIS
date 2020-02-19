@@ -8,6 +8,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { RouterModule,Routes } from '@angular/router';
+import { PatientDetailsComponent } from './patient-details/patient-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
    declarations: [
@@ -16,16 +19,18 @@ import { RouterModule,Routes } from '@angular/router';
       ProfileComponent,
       ProductAlertsComponent,
       ProductDetailsComponent,
-      
+      PatientDetailsComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
-      RouterModule.forRoot([
-         { path: '', component: NewComponent },
-         { path: 'products/:productId', component: ProductDetailsComponent },
-       ])
-   ],
+      BrowserAnimationsModule,
+      MatIconModule,
+      // RouterModule.forRoot([
+      //    { path: '', component: NewComponent },
+      //    { path: 'products/:productId', component: ProductDetailsComponent },
+      //  ])
+         ],
    providers: [],
    bootstrap: [
       AppComponent

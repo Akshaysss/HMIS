@@ -1,0 +1,47 @@
+
+
+.topnav{
+    background-color: #3498DB;
+    height: 8vh;
+    color: white;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+   
+ 
+.date{
+    margin: 0 0 -12px;
+}
+
+.hospital-name{
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 -12px;
+
+}
+
+ul{
+    list-style-type: none;
+    font-size: 12px;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+    color: #111111;
+  }
