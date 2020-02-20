@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,NgZone } from '@angular/core';
+
 
 @Component({
   selector: 'app-patient-details',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PatientDetailsComponent implements OnInit {
 
-  constructor() { }
+  myDate;
+  constructor() {
+    
+   }
 
   ngOnInit() {
+    
+    setTimeout(()=>{
+      this.myDate= Date.now();
+    }, 100);
+    
+
+
   }
 
 }
