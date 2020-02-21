@@ -1,131 +1,142 @@
 <!-- ============ TOP NAV ============ -->
-<div class="topnav">
+<div class="top ">
 
-  <div class="col-md-4 date ">
-    <a>Date: {{myDate | date:'short'}} </a>
+  <div class="topnav row">
+
+    <div class="col-md-4 date ">
+      <a>Date: {{myDate | date:'short'}} </a>
+
+    </div>
+
+    <div class="col-md-4 hospital-name">
+      <a>
+        Hospital Name
+      </a>
+    </div>
+
+    <div class="col-md-4 list">
+      <ul class="menulist">
+        <li>
+          <a href="#">
+            <!-- <mat-icon class="ic-logout" aria-hidden="false" aria-label="Example signout icon">home</mat-icon> -->
+            <!-- <mat-icon class="ic-logout">exit_to_app</mat-icon> -->
+            <img src="../../assets/img/logout.png" alt="logout">
+            LOGOUT
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- <mat-icon class="ic-user" >person</mat-icon> -->
+            <img src="../../assets/img/user.png" alt="User">
+            USERNAME
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- <mat-icon class="ic-user" >person</mat-icon> -->
+            <img class="alerts" src="../../assets/img/ic-notifications.png" alt="User">
+          </a>
+        </li>
+      </ul>
+    </div>
 
   </div>
 
-  <div class="col-md-4 hospital-name">
-    <a>
-      Hospital Name
-    </a>
-  </div>
 
-  <div class="col-md-4 list">
-    <ul class="menulist">
-      <li>
-        <a href="#">
-          <!-- <mat-icon class="ic-logout" aria-hidden="false" aria-label="Example signout icon">home</mat-icon> -->
-          <!-- <mat-icon class="ic-logout">exit_to_app</mat-icon> -->
-          <img src="../../assets/img/logout.png" alt="logout">
-          LOGOUT
+
+  <!-- ============ END OF TOP NAV ============ -->
+
+
+
+  <!-- ============ PERSONAL DETAILS ============ -->
+
+  <div class="details row ">
+
+    <div class="row col-md-12 personal-details">
+
+      <div class="col-md-3 col-sm-6 personal ">
+        <span>
+          Personal Details
+        </span>
+      </div>
+
+      <div class="col-md-6 col-sm-6 pt-id">
+        <a>
+          <span>Patient ID: </span> PT00001 &nbsp;&nbsp;&nbsp;&nbsp; <span>UPID:</span> UPID000001
         </a>
-      </li>
-      <li>
-        <a href="#">
-          <!-- <mat-icon class="ic-user" >person</mat-icon> -->
-          <img src="../../assets/img/user.png" alt="User">
-          USERNAME
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <!-- <mat-icon class="ic-user" >person</mat-icon> -->
-          <img class="alerts" src="../../assets/img/ic-notifications.png" alt="User">
-        </a>
-      </li>
-    </ul>
+      </div>
+
+      <div class="col-md-3  ">
+      </div>
+
+    </div>
+
+    <div class="container col-md-12 row p-details">
+
+      <div class="col-md-8 col-sm-8 col-xs-12 row">
+        <div class="col-md-6 ">
+
+          <div class="row">
+            <div class="col-md-4 col-sm-4"><span>Full Name : </span></div>
+            <div class="col-md-8 col-sm-8">Jindam Akshay<br></div>
+
+            <div class="col-md-4 col-sm-4"><span>Mobile No. : </span></div>
+            <div class="col-md-8 col-sm-8">9876543210<br></div>
+
+            <div class="col-md-4 col-sm-4"><span>Referred By: </span></div>
+            <div class="col-md-8 col-sm-8">Prasad<br></div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-sm-4"><span>Emai ID : </span></div>
+            <div class="col-md-9 col-sm-8">akshays.jindam@gmail.com<br></div>
+
+            <div class="col-md-3 col-sm-4"><span>Address : </span></div>
+            <div class="col-md-9 col-sm-8">Rasoolpura, Secunderabad.<br></div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 col-xs-12 row">
+        <div class="col-md-6 ">
+          <div class="row">
+            <div class="col-md-6 col-sm-6"><span>Gender : </span></div>
+            <div class="col-md-6 col-sm-6">Male<br></div>
+
+            <div class="col-md-6 col-sm-6"><span>Age : </span></div>
+            <div class="col-md-6 col-sm-6">25<br></div>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 ">
+          <div class="row">
+            <div class="col-md-6 col-sm-6"><span>Weight : </span></div>
+            <div class="col-md-6 col-sm-6">52 kg<br></div>
+
+            <div class="col-md-6 col-sm-6"><span>Height : </span></div>
+            <div class="col-md-6 col-sm-6">5.6<br></div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-12">
+      <hr>
+    </div>
+
   </div>
 
 </div>
 
 
-
-<!-- ============ END OF TOP NAV ============ -->
-
-
-
-<!-- ============ PERSONAL DETAILS ============ -->
-
-  <div class="row personal-details">
-
-    <div class="col-md-3 col-sm-6 personal ">
-      <span>
-        PERSONAL DETAILS
-      </span>
-    </div>
-
-    <div class="col-md-6 col-sm-6 pt-id">
-      <a>
-        <span>Patient ID: </span> PT00001  &nbsp;&nbsp;&nbsp;&nbsp; <span>UPID:</span>  UPID000001
-      </a>
-    </div>
-
-    <div class="col-md-3  ">   
-    </div>
-
-  </div>
-
-  <div class="container-fluid row p-details">
-    <div class="col-md-8 col-sm-8 col-xs-12 row">
-      <div class="col-md-6 ">
-        <div class="row">
-          <div class="col-md-4"><span>Full Name : </span></div>
-          <div class="col-md-8">Jindam Akshay<br></div>
-  
-          <div class="col-md-4"><span>Mobile No. : </span></div>
-          <div class="col-md-8">9876543210<br></div>
-  
-          <div class="col-md-4"><span>Referred By: </span></div>
-          <div class="col-md-8">Prasad<br></div>
-  
-        </div>
-      </div>
-  
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-3"><span>Emai ID : </span></div>
-          <div class="col-md-9">akshays.jindam@gmail.com<br></div>
-  
-          <div class="col-md-3"><span>Address : </span></div>
-          <div class="col-md-9">Rasoolpura, Secunderabad.<br></div>
-  
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-sm-4 col-xs-12 row">
-      <div class="col-md-6 ">
-        <div class="row">
-          <div class="col-md-6 col-sm-6"><span>Gender : </span></div>
-          <div class="col-md-6 col-sm-6">Male<br></div>
-  
-          <div class="col-md-6 col-sm-6"><span>Age : </span></div>
-          <div class="col-md-6 col-sm-6">25<br></div>
-  
-        </div>
-      </div>
-  
-      <div class="col-md-6 ">
-        <div class="row">
-          <div class="col-md-6 col-sm-6"><span>Weight : </span></div>
-          <div class="col-md-6 col-sm-6">52 kg<br></div>
-  
-          <div class="col-md-6 col-sm-6"><span>Height : </span></div>
-          <div class="col-md-6 col-sm-6">5.6<br></div>
-  
-        </div>
-      </div>
-    </div>
-
-    
-
-    
-
-  </div>
-
-<hr>
 
 <!-- ============ END OF PERSONAL DETAILS ============ -->
 
@@ -133,25 +144,43 @@
 
 <!-- ============ PATIENT DETAILS ============ -->
 
-<div class="container-fluid row">
+<div class="container-fluid appointment_details">
 
-  <div class="col-md-2">
-    Check-Up Details:
+  <div class="row">
+
+    <div class="col-md-2 previous_apt">
+      Previous Appointment
+    </div>
+
+    <div class="col-md-10 row apt_details">
+
+      <div class="col-md-3 checkup_title">
+        Check-Up Details
+      </div>
+
+      <div class="col-md-3 setas">
+        <span> Set as :</span> Public 
+        <mat-slide-toggle>slide me</mat-slide-toggle>
+      </div>
+
+      <div class="col-md-6 button1">
+        <ul>
+          <li>
+            <button class="btn-primary btn-refer ">Refer to another Doctor</button> &nbsp;
+            <button class="btn-primary btn-send ">Send request for In-patient</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-12 pov">
+        <span> Purpose of Visit:</span>
+        <input type="text">
+      </div>
+
+    </div>
+
   </div>
-
-  <div class="col-md-3">
-    Check-Up Details:
-  </div>
-
-  <div class="col-md-3">
-    Check-Up Details:
-  </div>
-
-  <div class="col-md-4">
-    <button class="btn-primary btn-refer">Refer to another Doctor</button> &nbsp;
-    <button class="btn-primary btn-send">Send request for In-patient</button>
-  </div>
-
+  
 </div>
 
 

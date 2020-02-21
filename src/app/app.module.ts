@@ -11,6 +11,10 @@ import { RouterModule,Routes } from '@angular/router';
 import { PatientDetailsComponent } from './patient-details/patient-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MatSliderModule } from '@angular/material/slider';
+
 @NgModule({
    declarations: [
       AppComponent,
@@ -25,6 +29,9 @@ import {MatIconModule} from '@angular/material/icon';
       AppRoutingModule,
       BrowserAnimationsModule,
       MatIconModule,
+      MatSliderModule,
+      MatSlideToggleModule,
+      MatButtonToggleModule,
       // RouterModule.forRoot([
       //    { path: '', component: NewComponent },
       //    { path: 'products/:productId', component: ProductDetailsComponent },

@@ -28,7 +28,9 @@
               {
                 "input": "./node_modules/bootstrap/dist/css/bootstrap.min.css"
               },
-              
+              {
+                "input": "./node_modules/material-design-icons/iconfont/material-icons.css"
+              },
               "src/styles.css"
             ],
             "scripts": []
@@ -96,7 +98,9 @@
               {
                 "input": "./node_modules/bootstrap/dist/css/bootstrap.min.css"
               },
-              
+              {
+                "input": "./node_modules/material-design-icons/iconfont/material-icons.css"
+              },
               "src/styles.css"
             ],
             "scripts": []
@@ -130,5 +134,8 @@
       }
     }
   },
-  "defaultProject": "HMIS"
+  "defaultProject": "HMIS",
+  "cli": {
+    "analytics": "5c41c42f-f750-493d-8c70-536fac3e4722"
+  }
 }

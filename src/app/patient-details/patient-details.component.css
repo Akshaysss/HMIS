@@ -1,9 +1,21 @@
 /* ============ TOP NAV ============ */
 
+.top{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+
+}
+
+.details{
+    background-color: white;
+}
+
 .topnav{
     background-color: #3498DB;
     height: 8vh;
     color: white;
+    padding-left: 16px;
     
     display: flex;
 	flex-direction: row;
@@ -84,6 +96,7 @@ li a:hover {
 
 .personal{
     margin-left: 15px;
+    color: #2B4857;
 }
 
 .personal span{
@@ -101,7 +114,7 @@ li a:hover {
 }
 
 .pt-id a{
-    color: black;
+    color: #2B4857;
     background-color: #E4E4E4;
     padding: 6px 20px;
     border-radius: 4px;
@@ -112,7 +125,7 @@ li a:hover {
 
 .pt-id span{
     /* color: #707070; */
-    color: black;
+    color: #2B4857;
     font-weight: 100;
 }
 
@@ -123,11 +136,12 @@ li a:hover {
 .p-details {
     margin: 8px 32px;
     font-weight: 500;
+    color: #2B4857;
    
 }
 
 hr{
-    margin: 8px 0px;
+    margin: 8px 0px 0px 0px;
     border-top: 1px solid #B7B7B7;
 }
 
@@ -138,7 +152,12 @@ hr{
 
     
 
-/* ============ End Of PATIENT DETAILS ============ */
+/* ============  PATIENT DETAILS ============ */
+
+.appointment_details{
+    padding-top: 29vh;
+
+}
 
 .btn-refer{
     border: 1px solid #3498DB;
@@ -159,12 +178,63 @@ hr{
     background-color: #3498DB;
     border-radius: 4px;
     padding: 4px 16px;
+    margin-left: 16px;
 }
 
 .btn-send:hover{
     background-color: #005cb2 !important;
     color: white !important;
 }
+
+.previous_apt{
+    border-right: 1px solid #B7B7B7;
+    height: 70vh; 
+    font-size: 14px;
+    font-weight: 500;
+    color: #2B4857;
+}
+
+
+
+.button1 ul{
+    list-style-type: none;
+}
+
+.button1 li{
+    float: right;
+}
+
+.checkup_title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #2B4857;
+}
+
+.setas span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2B4857;
+}
+
+.pov{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2B4857;
+    margin-top: 12px;
+}
+
+.pov span{
+    padding-right: 8px;
+}
+
+.pov input{
+    width: 89%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #B7B7B7;
+    padding: 12px;
+}
+
 
 
 

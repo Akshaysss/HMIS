@@ -1,4 +1,4 @@
-import { Component, OnInit,NgZone } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 
 
 @Component({
@@ -6,21 +6,30 @@ import { Component, OnInit,NgZone } from '@angular/core';
   templateUrl: './patient-details.component.html',
   styleUrls: ['./patient-details.component.css']
 })
+
+
 export class PatientDetailsComponent implements OnInit {
 
   myDate;
+  timer;
+
   constructor() {
-    
+     
    }
 
   ngOnInit() {
-    
-    setTimeout(()=>{
-      this.myDate= Date.now();
+
+    var mainThis = this;
+    this.timer = setInterval(() => {
+      mainThis.myDate= Date.now();
     }, 100);
     
+  }
 
-
+  ngOnDestroy() {
+    if (this.timer) {
+      clearInterval(this.timer);
+    }
   }
 
 }
