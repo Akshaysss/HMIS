@@ -142,7 +142,9 @@ li a:hover {
 
 hr{
     margin: 8px 0px 0px 0px;
-    border-top: 1px solid #B7B7B7;
+    /* border-top: 1px solid #B7B7B7; */
+    border-top: 1px solid #f5f5f5;
+
 }
 
 
@@ -155,7 +157,7 @@ hr{
 /* ============  PATIENT DETAILS ============ */
 
 .appointment_details{
-    padding-top: 29vh;
+    padding-top: 28vh;
 
 }
 
@@ -186,14 +188,110 @@ hr{
     color: white !important;
 }
 
+        /* =========  previous appointment ========= */
+
 .previous_apt{
-    border-right: 1px solid #B7B7B7;
+    /* border-right: 1px solid #B7B7B7; */
+    /* border-right: 1px solid #f5f5f5; */
     height: 70vh; 
-    font-size: 14px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    padding-top: 16px;
     font-weight: 500;
     color: #2B4857;
 }
 
+.apt_list{
+    height: auto;
+    padding-top: 16px;
+}
+
+/* .apt_date{
+    background-color: lightgrey;
+} */
+
+:host /deep/ .mat-expansion-panel-header{
+    box-shadow: none; 
+    height: 40px !important;
+    padding: 0px 24px 0px 0px;
+}
+
+:host /deep/ .mat-expansion-panel-body {
+    padding: 0px 12px 0px 50px;
+}
+
+.apt_list_pov{
+    font-weight: 500;
+}
+
+.active{
+    background-color: white !important; 
+}
+
+.color1{
+    background-color: #3498DB ;
+    height: 40px;
+   
+}
+
+.color2{
+    background-color: #C2C2C2 ;
+    height: 40px;
+    
+   
+}
+
+:host /deep/ .mat-content {
+    display: contents;
+    
+}
+
+:host /deep/ .mat-expansion-panel {
+    background-color: #f5f5f5 ;
+    box-shadow: none; 
+    border-radius: 0px!important;
+    
+}
+
+:host /deep/ .mat-divider{
+    margin: 0 16px;
+    
+}
+
+
+.apt_list_color{
+    width: 8px;
+
+}
+
+.apt_list ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.apt_list ul li{
+    float: none;    
+    padding: 0px 0px 8PX 8px;
+    
+}
+
+.apt_list ul li a{
+    color: #005cb2;
+}
+
+.apt_list ul .active{
+    background-color: white;
+}
+
+.apt{
+    padding-top: 8px;
+}
+
+.arrow{
+    vertical-align: middle;  
+}
+
+  /* =========  End of previous appointment ========= */
 
 
 .button1 ul{
@@ -206,8 +304,17 @@ hr{
 
 .checkup_title{
     font-size: 16px;
+    padding-top: 8px;
     font-weight: 500;
     color: #2B4857;
+}
+
+.setas a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #2B4857;
+    font-weight: 400;
+    margin-left: 8px;
 }
 
 .setas span{
@@ -216,11 +323,48 @@ hr{
     color: #2B4857;
 }
 
+
+:host /deep/ .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: #F5F5F5 !important; 
+    
+}
+
+:host /deep/ .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: orangered;
+}
+
+
+:host  /deep/ .mat-slide-toggle-bar, .mat-slide-toggle-thumb {
+    background-color: #005cb2 ;
+}
+
+:host /deep/ .mat-slide-toggle{
+    margin-left: 8px;
+}
+
+:host  /deep/ .mat-slide-toggle-content {
+    color: #2B4857;
+    font-weight: 400;
+    padding-top: 6px;
+    margin-left: 8px;
+}
+
+
+
+
+/* ============ End Of PATIENT DETAILS ============ */
+
+
+
+/* ============  Appointment DETAILS ============ */
+
+
+
 .pov{
     font-size: 14px;
     font-weight: 500;
     color: #2B4857;
-    margin-top: 12px;
+    margin-top: 24px;
 }
 
 .pov span{
@@ -231,11 +375,256 @@ hr{
     width: 89%;
     height: 40px;
     border-radius: 4px;
-    border: 1px solid #B7B7B7;
+    border: 1px solid lightgrey;
     padding: 12px;
+}
+
+
+.card{
+    margin-top: 24px;
+}
+
+.addimage span{
+    border: 1px solid #8299A5;
+    padding: 3px 6px;
+    border-radius: 4px;
+    background-color: #556C78;
+    cursor: pointer;
+}
+
+.addtext span{
+    border: 1px solid burlywood;
+    padding: 3px 6px;
+    border-radius: 4px;
+    background-color: #556C78;
+    cursor: pointer;
+}
+
+.card{
+    width: 100%;
+    height: 180px;
+    border-radius: 4px;
+    border: 1px solid #E4E4E4;
+    /* box-shadow: 0px 0px 2px  lightgrey; */
+}
+
+.card_heading{
+    width: 100%;
+    height: 32px;
+    background-color: #34495E;
+    border-radius: 4px 4px 0px 0px;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	
+	align-items: center;
+    align-content: stretch;
+    
+    display: table;
+    margin-left: 0px;
+    padding-top: 2px;
+
+
+}
+
+
+
+.card_heading span{
+    color: white;
+    /* padding: 16px; */
+    vertical-align: -webkit-baseline-middle;
+}
+
+.card_heading a{
+    color: white;
+    padding-right: 0px;
+    align-items: flex-end;
+    display: table-cell;
+    text-align: end;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.card_heading .edit{
+    text-align: -webkit-right;
+    padding-top: 4px;
 }
 
 
 
 
-/* ============ End Of PATIENT DETAILS ============ */
+
+
+
+/* ============ End Of Appointment DETAILS ============ */
+
+
+
+/* ============ Modal ============ */
+
+.backdrop{
+    background-color:rgba(0,0,0,0.6);    
+    position:fixed; 
+    z-index: 1000;   
+    top:0;    
+    left:0;    
+    width:100%;    
+    height:100vh;
+    
+}
+
+
+.modal-header{
+    /* background-color: #34495E; */
+    background-color: darkred;
+    height: 40px;
+    padding: 8px 16px ;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.modal-title{
+    font-size: 14px;
+    margin-left: -12px;
+
+}
+
+.modal-header span{
+    color: white !important;
+    
+}
+
+.modal-header .close{
+    color: white !important;
+    /* text-shadow: 0 1px 0 #fff; */
+    text-shadow: none;
+}
+
+.modal-body{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    
+    margin-top: -12px;
+}
+
+.modal-body .image{
+    background-color: #34495E;
+    color: white;
+    width: 24%;
+}
+
+.image a{
+    color: white;
+    padding-left: 8px;
+    text-decoration: none;
+}
+
+.text a{
+    color: white;
+    padding-left: 8px;
+    text-decoration: none;
+}
+
+.gallery a{
+    color: #34495E;
+    padding-left: 8px;
+    text-decoration: none;
+}
+
+.image:hover , .gallery:hover , .text:hover {
+    background-color: #0A212D !important;
+}
+
+.modal-body .text{
+    background-color: #34495E;
+    color: white;
+    margin-left: 16px;
+    width: 24%;
+}
+
+.modal-body .gallery{
+    /* background-color: #34495E; */
+    background-color: #fff;
+    border-color: #34495e;
+    color: #34495e;
+    margin-left: 16px;
+    width: 24%;
+}
+
+.gallery:hover{
+    background-color: #34495e !important;
+    border-color: #fff !important;
+    color: #fff !important;
+
+}
+
+.gallery:hover a{
+    
+    color: #fff !important;
+}
+
+.gallery:hover #Ellipse_93{
+    fill: #34495e !important;
+}
+
+.gallery:hover #Icon_material-image{
+    fill:#fff !important;
+    stroke:#fff !important;
+
+}
+
+
+.modal-footer{
+    padding:16px ;
+    /* border-top: 1px solid #e5e5e5; */
+    border-top:none;
+    text-align: center;
+}
+
+.modal-footer .submit{
+    width: 30%;
+    background-color: #3498DB;
+    color: white;
+    border: none;
+}
+
+.imagearea{
+    height: 280px;
+}
+
+/* ============ End Of Modal ============ */
+
+
+
+/* :host  /deep/ .container {
+    width: 500px;
+} */
+
+:host  /deep/ ._ngcontent-ygq-c73 {
+    width: 400px;
+}
+
+:host  /deep/  .constraints-info{
+    width: 400px;
+}
+
+:host  /deep/ angular-file-uploader{
+    width: 200px;
+}
+
+
+.dark-modal .modal-content {
+    background-color: #292b2c;
+    color: white;
+  }
+  .dark-modal .close {
+    color: white;
+  }
+  .light-blue-backdrop {
+    background-color: #5cb3fd;
+  }
+

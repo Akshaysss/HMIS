@@ -148,36 +148,212 @@
 
   <div class="row">
 
-    <div class="col-md-2 previous_apt">
+    <!-- ============ Previous Appointment ============ -->
+
+    <div class="col-md-2 col-sm-3 previous_apt">
       Previous Appointment
-    </div>
 
-    <div class="col-md-10 row apt_details">
+      <div class="row apt_list">
 
-      <div class="col-md-3 checkup_title">
-        Check-Up Details
-      </div>
+        <mat-expansion-panel class="active" >
+          <mat-expansion-panel-header  >
+            <mat-panel-title class="color1"></mat-panel-title>
+            <mat-panel-title>
+              18/12/2020
+            </mat-panel-title>
+            <mat-panel-title class="space"></mat-panel-title>
+          </mat-expansion-panel-header>
+      
+          <p class="apt_list_pov">Purpose of visit will be here <a href="">..see details</a></p>
+        </mat-expansion-panel>
 
-      <div class="col-md-3 setas">
-        <span> Set as :</span> Public 
-        <mat-slide-toggle>slide me</mat-slide-toggle>
-      </div>
+        <mat-divider></mat-divider>
 
-      <div class="col-md-6 button1">
-        <ul>
-          <li>
-            <button class="btn-primary btn-refer ">Refer to another Doctor</button> &nbsp;
-            <button class="btn-primary btn-send ">Send request for In-patient</button>
+        
+        <mat-expansion-panel>
+          
+
+          <mat-expansion-panel-header> 
+            <mat-panel-title class="color2"></mat-panel-title>
+            <mat-panel-title >              
+              20/12/2020
+            </mat-panel-title>      
+            <mat-panel-title class="space"></mat-panel-title>      
+          </mat-expansion-panel-header>  
+
+          <p class="apt_list_pov">Purpose of visit will be here <a href="">..see details</a></p>  
+        </mat-expansion-panel>
+
+        <mat-divider></mat-divider>
+
+        <mat-expansion-panel>     
+
+          <mat-expansion-panel-header>
+            
+            <mat-panel-title class="color1"></mat-panel-title>
+            <mat-panel-title>
+              22/12/2020
+            </mat-panel-title>          
+            <mat-panel-title class="space"></mat-panel-title>
+
+          </mat-expansion-panel-header>  
+              
+          <p class="apt_list_pov">Purpose of visit will be here <a href="">..see details</a></p>      
+        </mat-expansion-panel>
+
+        <mat-divider></mat-divider>
+
+
+        <mat-expansion-panel>
+
+          <mat-expansion-panel-header>
+            <mat-panel-title class="color2"></mat-panel-title>
+            <mat-panel-title>
+              24/12/2020
+            </mat-panel-title>  
+            <mat-panel-title class="space"></mat-panel-title>          
+          </mat-expansion-panel-header>  
+              
+          <p class="apt_list_pov">Purpose of visit will be here <a href="">..see details</a></p>      
+        </mat-expansion-panel>
+
+        <mat-divider></mat-divider>
+
+
+        <!-- <ul>
+          <li class="active">
+            <div class="row ">
+              <div class="col-md-2 apt_list_color"></div>
+              <div class="col-md-8">
+                <span>text will be here text will be here text will be here<a href="">..see more</a>
+                </span>
+              </div>
+              <div class="col-md-2 arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" type="button" width="18" height="10.292" viewBox="0 0 18 10.292">
+                  <path id="Icon_ionic-ios-arrow-down"  data-name="Icon ionic-ios-arrow-down" d="M15.191,18.436,22,11.624a1.281,1.281,0,0,1,1.817,0,1.3,1.3,0,0,1,0,1.822L16.1,21.164a1.284,1.284,0,0,1-1.774.038L6.563,13.452A1.287,1.287,0,1,1,8.379,11.63Z" transform="translate(-6.188 -11.246)" fill="#b7b7b7"/>
+                </svg>
+                
+              </div>
+            </div>
           </li>
-        </ul>
+          <li><span>text<a href="">..see more</a></span></li>
+          <li><a href="">..see more</a></li>
+          <li><a href="">..see more</a></li>
+        </ul> -->
+        
       </div>
 
-      <div class="col-md-12 pov">
-        <span> Purpose of Visit:</span>
-        <input type="text">
+      
+
+    </div>
+
+    <!-- ============ End of Previous Appointment ============ -->
+
+
+     <!-- ============ Appointment Details ============ -->
+
+    <div class="col-md-10 col-sm-9 apt">
+
+      <div class="row">
+
+        <div class="col-md-3 col-sm-12 checkup_title">
+          Check-Up Details
+        </div>
+  
+        <div class="col-md-3 col-sm-12 setas">
+          <span> Set as :</span>
+          <a>Public </a> 
+          <mat-slide-toggle>Private</mat-slide-toggle>
+        </div>
+  
+        <div class="col-md-6 col-sm-12 button1">
+          <ul>
+            <li>
+              <button class="btn-primary btn-refer " (click)="openModal()">Refer to another Doctor</button> &nbsp;
+
+              <button class="btn-primary btn-send ">Send request for In-patient</button>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 pov">
+          <span> Purpose of Visit:</span>
+          <input type="text">
+        </div>
+
+      </div>
+
+      <div class="row apt-details">
+
+        <div class="col-md-6 " >
+          <div class="card">
+            <div class=" card_heading row" >
+              <div class="col-md-6 col-sm-6" >
+              <span class="heading">Investigation</span>   
+              </div>
+              <div class="col-md-6 col-sm-6 edit" >                    
+                <a class="">ADD
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 17.5 16.719">
+                    <g id="Icon_feather-edit-3" data-name="Icon feather-edit-3" transform="translate(0.75 0.75)">
+                      <path id="Path_202" data-name="Path 202" d="M18,30H28.341" transform="translate(-12.341 -14.781)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                      <path id="Path_203" data-name="Path 203" d="M16.077,4.87a1.774,1.774,0,0,1,2.573,0,1.935,1.935,0,0,1,0,2.667L7.93,18.648l-3.43.889.858-3.556Z" transform="translate(-4.5 -4.318)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                    </g>
+                  </svg>
+
+                </a>    
+              </div>            
+            </div>
+            <div class="card_details">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 " >
+          <div class="card">
+            <div class=" card_heading row"  >
+              <div class="col-md-4 col-sm-4">
+              <span class="heading">Findings</span>   
+            </div>
+
+            <div class="col-md-4 col-sm-4 addimage" style="text-align: center;" >
+              <span class="heading">Add&nbsp;
+               
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" style="padding-top: 2px;" viewBox="0 0 24 21">
+                  <path id="Icon_awesome-camera" data-name="Icon awesome-camera" d="M24,7.5V21a2.251,2.251,0,0,1-2.25,2.25H2.25A2.251,
+                  2.251,0,0,1,0,21V7.5A2.251,2.251,0,0,1,2.25,5.25H6.375l.577-1.542a2.247,2.247,0,0,1,2.1-1.458h5.883a2.247,2.247,0,0,
+                  1,2.1,1.458l.581,1.542H21.75A2.251,2.251,0,0,1,24,7.5Zm-6.375,6.75A5.625,5.625,0,1,0,12,19.875,5.629,5.629,0,0,0,17.625,
+                  14.25Zm-1.5,0A4.125,4.125,0,1,1,12,10.125,4.131,4.131,0,0,1,16.125,14.25Z" transform="translate(0 -2.25)" fill="#fff"/>
+                </svg>
+              </span>   
+            </div>
+
+            <div class="col-md-4 col-sm-4 addtext edit1" style="text-align: -webkit-right;">                    
+              <span class="">Add &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 17.5 16.719">
+                <g id="Icon_feather-edit-3" data-name="Icon feather-edit-3" transform="translate(0.75 0.75)">
+                  <path id="Path_202" data-name="Path 202" d="M18,30H28.341" transform="translate(-12.341 -14.781)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  <path id="Path_203" data-name="Path 203" d="M16.077,4.87a1.774,1.774,0,0,1,2.573,0,1.935,1.935,0,0,1,0,2.667L7.93,18.648l-3.43.889.858-3.556Z" transform="translate(-4.5 -4.318)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                </g>
+              </svg> </span>    
+            </div>            
+            </div>
+            <div class="card_details">
+              
+            </div>
+          </div>
+        </div>
+
+
+        
+
       </div>
 
     </div>
+
+    <!-- ============ End of Appointment Details ============ -->
 
   </div>
   
@@ -186,3 +362,137 @@
 
 
 <!-- ============ END OF PATIENT DETAILS ============ -->
+
+
+<!-- ===============  MODAL =============== -->
+<div class="backdrop" [ngStyle]="{'display':display}"></div>
+<!-- /.modal !-->
+<div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':display}">
+  <!-- /.modal-dialog -->
+  <div class="modal-dialog" role="document">
+    <!-- /.modal-content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" aria-label="Close" (click)="onCloseHandled()">
+          <span aria-hidden="true">&times;</span></button>
+
+          <span class="modal-title">Investigation</span>
+        </div>
+
+        <div class="modal-body">
+
+          
+            <!-- <button type="button" class="btn btn-default image" (click)="openimage()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 24 21">
+                <path id="Icon_awesome-camera" data-name="Icon awesome-camera" d="M24,7.5V21a2.251,2.251,0,0,1-2.25,2.25H2.25A2.251,2.251,0,0,1,0,21V7.5A2.251,2.251,0,0,1,2.25,5.25H6.375l.577-1.542a2.247,2.247,0,0,1,2.1-1.458h5.883a2.247,2.247,0,0,1,2.1,1.458l.581,1.542H21.75A2.251,2.251,0,0,1,24,7.5Zm-6.375,6.75A5.625,5.625,0,1,0,12,19.875,5.629,5.629,0,0,0,17.625,14.25Zm-1.5,0A4.125,4.125,0,1,1,12,10.125,4.131,4.131,0,0,1,16.125,14.25Z" transform="translate(0 -2.25)" fill="#fff"/>
+              </svg>
+              <a href="javascript:void(0)">Add Images</a>
+            </button>
+
+            <button type="button" class="btn btn-default text" (click)="opentextarea()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14.5" viewBox="0 0 17.5 16.719">
+                <g id="Icon_feather-edit-3" data-name="Icon feather-edit-3" transform="translate(0.75 0.75)">
+                  <path id="Path_202" data-name="Path 202" d="M18,30H28.341" transform="translate(-12.341 -14.781)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  <path id="Path_203" data-name="Path 203" d="M16.077,4.87a1.774,1.774,0,0,1,2.573,0,1.935,1.935,0,0,1,0,2.667L7.93,18.648l-3.43.889.858-3.556Z" transform="translate(-4.5 -4.318)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                </g>
+              </svg>
+              <a href="javascript:void(0)">Write Text</a>
+            </button> -->
+
+
+            <angular-file-uploader
+              [config]="afuConfig">
+            </angular-file-uploader>
+
+        </div>
+      <div class="modal-body textarea "  *ngIf="IsText">
+        <textarea name="" id="textarea"  cols="80" rows="12"></textarea>
+      </div>
+      <div class="modal-body imagearea "  *ngIf="IsImage">
+
+        <button type="button" class="btn btn-default image" (click)="openimage()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 21">
+            <path id="Icon_awesome-camera" data-name="Icon awesome-camera" d="M24,7.5V21a2.251,2.251,0,0,1-2.25,2.25H2.25A2.251,
+            2.251,0,0,1,0,21V7.5A2.251,2.251,0,0,1,2.25,5.25H6.375l.577-1.542a2.247,2.247,0,0,1,2.1-1.458h5.883a2.247,2.247,0,0,
+            1,2.1,1.458l.581,1.542H21.75A2.251,2.251,0,0,1,24,7.5Zm-6.375,6.75A5.625,5.625,0,1,0,12,19.875,5.629,5.629,0,0,0,17.625,
+            14.25Zm-1.5,0A4.125,4.125,0,1,1,12,10.125,4.131,4.131,0,0,1,16.125,14.25Z" transform="translate(0 -2.25)" fill="#fff"/>
+          </svg>
+          <a href="javascript:void(0)">Open Camera</a>
+        </button>
+
+        <!-- <button type="button" class="btn btn-default gallery" (click)="opengallery()"> -->
+        <button type="button file" id="gallery" class="btn btn-default gallery"  >
+          <input type="file" id="opengallery" name="filename" style="display: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+            <g id="gallery" transform="translate(-1647 -320)">
+              <path id="Icon_material-image" data-name="Icon material-image" d="M28.5,25.833V7.167A2.675,2.675,0,0,0,25.833,
+              4.5H7.167A2.675,2.675,0,0,0,4.5,7.167V25.833A2.675,2.675,0,0,0,7.167,28.5H25.833A2.675,2.675,0,0,0,28.5,25.833ZM10.833,
+              17.5l4.333,4.013L20.833,14.5l6,10H6.167Z" 
+              transform="translate(1642.5 315.5)" fill="#34495e" stroke="#34495e"/>
+              <circle id="Ellipse_93" data-name="Ellipse 93" cx="3" cy="3" r="3" transform="translate(1651 324)" fill="#fff" stroke="#34495e" />
+            </g>
+          </svg>
+          
+          <a href="javascript:void(0)">Open Gallery</a>
+        </button>
+
+          <br>
+
+
+        <!-- <textarea name="" id="textarea"  cols="80" rows="12">
+          Image area
+        </textarea> -->
+      </div>
+        <div class="modal-footer ">
+          <button type="button" class="btn btn-default submit" (click)="onCloseHandled()">SUBMIT</button>
+        </div>
+      </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal !-->
+
+<!-- =============== End of MODAL =============== -->
+
+<!-- <input type="file" id="imgupload" style="display:none"/> 
+<button id="OpenImgUpload">Image Upload</button>
+
+<script>
+
+$('#OpenImgUpload').click(function(){ 
+  $('#imgupload').trigger('click'); });
+
+</script>
+ -->
+
+
+
+
+
+
+ <!-- <ng-template #content let-modal style="z-index: 1000;">
+  <div class="modal-header">
+    <h4 class="modal-title">Modal title</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>One fine body&hellip;</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+  </div>
+</ng-template>
+
+
+
+<button class="btn btn-outline-primary mb-2 mr-2" (click)="openWindowCustomClass(content)">Modal with window custom class</button>
+<button class="btn btn-outline-primary mb-2 mr-2" (click)="openBackDropCustomClass(content)">Modal with backdrop custom class</button>
+<button class="btn btn-outline-primary mb-2 mr-2" (click)="openSm(content)">Small modal</button>
+<button class="btn btn-outline-primary mb-2 mr-2" (click)="openLg(content)">Large modal</button>
+<button class="btn btn-outline-primary mb-2 mr-2" (click)="openXl(content)">Extra large modal</button>
+<button class="btn btn-outline-primary mb-2 mr-2" (click)="openVerticallyCentered(content)">Modal vertically centered</button> -->
+
+

@@ -14,6 +14,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatSliderModule } from '@angular/material/slider';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDividerModule} from '@angular/material/divider';
+import { AngularFileUploaderModule } from "angular-file-uploader";
+
+
 
 @NgModule({
    declarations: [
@@ -22,7 +27,8 @@ import { MatSliderModule } from '@angular/material/slider';
       ProfileComponent,
       ProductAlertsComponent,
       ProductDetailsComponent,
-      PatientDetailsComponent
+      PatientDetailsComponent,
+      
    ],
    imports: [
       BrowserModule,
@@ -32,6 +38,12 @@ import { MatSliderModule } from '@angular/material/slider';
       MatSliderModule,
       MatSlideToggleModule,
       MatButtonToggleModule,
+      MatExpansionModule,
+      MatDividerModule,
+      AngularFileUploaderModule,
+      BrowserModule,
+     
+      
       // RouterModule.forRoot([
       //    { path: '', component: NewComponent },
       //    { path: 'products/:productId', component: ProductDetailsComponent },
@@ -39,7 +51,7 @@ import { MatSliderModule } from '@angular/material/slider';
          ],
    providers: [],
    bootstrap: [
-      AppComponent
+      AppComponent,
    ]
 })
 export class AppModule { }
