@@ -1,4 +1,7 @@
-import { Component, OnInit, } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
+import { BsModalService } from 'ngx-bootstrap/modal';
+import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
+import { trigger, state, transition, style, animate } from '@angular/animations';
 
 // import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
@@ -11,6 +14,14 @@ import { Component, OnInit, } from '@angular/core';
   selector: 'app-patient-details',
   templateUrl: './patient-details.component.html',
   styleUrls: ['./patient-details.component.css'],
+  animations: [
+    trigger('visibilityChanged', [
+      state('shown', style({ opacity: 1 })),
+      state('hidden', style({ opacity: 0 })),
+      transition('shown => hidden', animate('600ms')),
+      transition('hidden => shown', animate('300ms')),
+    ])
+  ]
   // encapsulation: ViewEncapsulation.None,
  
 })
@@ -18,6 +29,11 @@ import { Component, OnInit, } from '@angular/core';
 
 
 export class PatientDetailsComponent implements OnInit {
+  
+  modalRef: BsModalRef;
+  
+  optionsSelect: Array<any>;
+
 
   // closeResult: string;
 
@@ -29,7 +45,8 @@ export class PatientDetailsComponent implements OnInit {
   IsImage:boolean=false;
 
   // constructor(private modalService: NgbModal) { }
-  constructor() { }
+  // constructor() { }
+  constructor(private modalService: BsModalService) { }
 
   ngOnInit() {
 
@@ -39,6 +56,19 @@ export class PatientDetailsComponent implements OnInit {
     }, 100);
     
   }
+
+  openAddModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template,{ backdrop: 'static', keyboard: false });
+  }
+
+  visiblityState = 'hidden';
+  toggle() {
+  if (this.visiblityState === 'hidden')
+    this.visiblityState = 'shown';
+  else
+    this.visiblityState = 'hidden';
+}
+
 
   ngOnDestroy() {
     if (this.timer) {

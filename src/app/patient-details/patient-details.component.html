@@ -320,7 +320,7 @@
             </div>
 
             <div class="col-md-4 col-sm-4 addimage" style="text-align: center;" >
-              <span class="heading">Add&nbsp;
+              <span class="heading" (click)="openAddModal(template)">Add&nbsp;
                
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" style="padding-top: 2px;" viewBox="0 0 24 21">
                   <path id="Icon_awesome-camera" data-name="Icon awesome-camera" d="M24,7.5V21a2.251,2.251,0,0,1-2.25,2.25H2.25A2.251,
@@ -329,6 +329,10 @@
                   14.25Zm-1.5,0A4.125,4.125,0,1,1,12,10.125,4.131,4.131,0,0,1,16.125,14.25Z" transform="translate(0 -2.25)" fill="#fff"/>
                 </svg>
               </span>   
+
+                
+
+
             </div>
 
             <div class="col-md-4 col-sm-4 addtext edit1" style="text-align: -webkit-right;">                    
@@ -469,30 +473,44 @@ $('#OpenImgUpload').click(function(){
 
 
 
+ <ng-template #template>
+  <div  class="modal-header" id="head">
+      <h4 class="modal-title pull-left">Add New Parameter</h4>
+      <button type="button"  class="close pull-right" aria-label="Close" (click)="modalRef.hide()" style="color: white;" >
+          <span id="how" aria-hidden="true">&times;</span>
+      </button>
+  </div >
+  <div class="modal-body" id="bod">
+  
+    <div class="form-group">
+      <label for="exampleInputEmail1">Parameter Name</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Parameter Name">
+      
+    </div>
+  
+    <div class="form-group">
+      <label for="exampleInputEmail1">Select Parameter Type: </label>
+      <div class="row" id="r">
+      <div class="col-xs-6">
+      <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Numeric">
+    </div>
+    <div class="col-xs-6">
+      <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Yes/No">
+      </div>
+    </div>
+  </div>
+    
 
-
- <!-- <ng-template #content let-modal style="z-index: 1000;">
-  <div class="modal-header">
-    <h4 class="modal-title">Modal title</h4>
-    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    <p>One fine body&hellip;</p>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
-  </div>
+      <button  (click)="toggle()" class="btn btn-primary"id="bull">
+        Add Parameter
+      </button>
+    </div>
+      <div [@visibilityChanged]="visiblityState" id="var">    
+      Parameter has been added successfully
+    </div>
+<div class="model-footer">
+<hr>
+</div>
+    
+    
 </ng-template>
-
-
-
-<button class="btn btn-outline-primary mb-2 mr-2" (click)="openWindowCustomClass(content)">Modal with window custom class</button>
-<button class="btn btn-outline-primary mb-2 mr-2" (click)="openBackDropCustomClass(content)">Modal with backdrop custom class</button>
-<button class="btn btn-outline-primary mb-2 mr-2" (click)="openSm(content)">Small modal</button>
-<button class="btn btn-outline-primary mb-2 mr-2" (click)="openLg(content)">Large modal</button>
-<button class="btn btn-outline-primary mb-2 mr-2" (click)="openXl(content)">Extra large modal</button>
-<button class="btn btn-outline-primary mb-2 mr-2" (click)="openVerticallyCentered(content)">Modal vertically centered</button> -->
-
-

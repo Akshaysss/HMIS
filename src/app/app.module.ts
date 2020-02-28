@@ -17,6 +17,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDividerModule} from '@angular/material/divider';
 import { AngularFileUploaderModule } from "angular-file-uploader";
+// import { BsModalService } from 'ngx-bootstrap/modal';
+import { ModalModule } from 'ngx-bootstrap';
 
 
 
@@ -41,14 +43,15 @@ import { AngularFileUploaderModule } from "angular-file-uploader";
       MatExpansionModule,
       MatDividerModule,
       AngularFileUploaderModule,
-      BrowserModule,
+      // BsModalService,
+      ModalModule.forRoot(),
      
       
       // RouterModule.forRoot([
       //    { path: '', component: NewComponent },
       //    { path: 'products/:productId', component: ProductDetailsComponent },
       //  ])
-         ],
+   ],
    providers: [],
    bootstrap: [
       AppComponent,
